@@ -226,17 +226,77 @@ body {
 .contact {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
 	align-items: center;
-	padding: 20px;
 }
 
 .contact-box {
 	display: flex;
-	justify-content: center;
 	align-items: flex-start;
+	width: 800px;
 }
 
 .contact-box img {
 	width: 400px;
+	margin: 0 20px;
+}
+
+.input-style input {
+	margin: 10px 0px;
+	border: 1px solid gray;
+	border-radius: 8px;
+	width: 400px;
+	padding: 10px;
+}
+
+input:focus {
+	box-shadow: 1px 1px 15px #ff00004d;
+	border: 2px solid var(--brand-color);
+}
+
+textarea:focus {
+	box-shadow: 1px 1px 15px #ff00004d;
+	border: 2px solid var(--brand-color);
+}
+
+.form-text {
+	margin: 10px 0px;
+	border: 1px solid gray;
+	border-radius: 8px;
+	width: 400px;
+	padding: 10px;
+}
+
+.checkbox-style {
+	width: 400px;
+}
+
+.checkbox-style p {
+	padding: 0 5px;
+	font-size: 10px;
+	color: rgb(199, 191, 191);
+}
+
+.checkbox-style {
+	display: flex;
+	padding: 0 5px;
+}
+
+.btn-send {
+	margin: 10px 300px;
+	box-shadow: 0px 3px 6px #ff00004d;
+	border: 1px solid var(--brand-color);
+	border-radius: 40px;
+	padding: 5px 20px;
+	cursor: pointer;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-send:hover {
+	background-color: black;
+	color: white;
+}
+
+#checkbox:checked {
+	border: 10px solid black;
+	accent-color: var(--brand-color);
 }
