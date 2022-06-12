@@ -249,11 +249,13 @@ body {
 }
 
 input:focus {
+	outline: none;
 	box-shadow: 1px 1px 15px #ff00004d;
 	border: 2px solid var(--brand-color);
 }
 
 textarea:focus {
+	outline: none;
 	box-shadow: 1px 1px 15px #ff00004d;
 	border: 2px solid var(--brand-color);
 }
@@ -299,4 +301,45 @@ textarea:focus {
 #checkbox:checked {
 	border: 10px solid black;
 	accent-color: var(--brand-color);
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	background-color: #28272c;
+	height: 300px;
+}
+
+.footer-links {
+	margin: 20px;
+	display: flex;
+	flex-direction: row;
+}
+
+.column1 {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-links a {
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	transition: color 0.3s;
+	margin-left: 50px
+}
+
+.footer-links a:hover {
+	color: var(--brand-color);
+}
+
+.logo-footer {
+	margin-top: 20px;
+}
+
+.footer-text {
+	align-self: flex-end;
+	color: grey;
+	margin-right: 50px;
 }
